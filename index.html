@@ -1,1 +1,183 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Card</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          to right top,
+          #ffe5ec,
+          #ffc2d1,
+          #ffb3c6,
+          #ff8fab,
+          #fb6f92
+        );
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .card {
+        position: relative;
+        width: 300px;
+        height: 425px;
+        border: 10px solid #f08080;
+        margin: 60px auto 0;
+        box-shadow: inset 10px 0 15px rgba(0, 0, 0, 0.1);
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255),
+            rgba(255, 255, 255, 0.5)
+          ),
+          url("https://i.ibb.co.com/qpzHx0t/In-Collage-20240622-053546129.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #ffffff;
+      }
+      .card .text-container {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+      }
+      .strikethrough {
+        text-decoration: line-through;
+      }
+      .card .text-container .head {
+        font-family: "Brush MT", cursive;
+        color: #f08080;
+        font-size: 1.5em;
+        margin: 60px auto;
+      }
+      .card p {
+        font-size: 1.1em;
+        line-height: 1.4;
+        font-family: "Courier New", monospace, bold,;
+        color: #f08080;
+        font-style: italic;
+        text-align: center;
+        margin: 30px auto 0;
+      }
+      .card .front {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: -10px 0 0 -10px;
+        border: 10px solid #f08080;
+        backface-visibility: hidden;
+        background-color: #f08080;
+        transform-style: preserve-3d;
+        transform-origin: 0% 50%;
+        transform: perspective(800px) rotateY(0deg);
+        transition: all 0.8s ease-in-out;
+      }
+      .card:hover .front {
+        transform: perspective(800px) rotateY(-170deg);
+        background-color: #f08080;
+      }
+      .card:hover .back {
+        transform: perspective(800px) rotateY(-170deg);
+        box-shadow: 7px 0 5px rgba(0, 0, 0, 0.3),
+          inset 2px 0 15px rgba(0, 0, 0, 0.1);
+        background-color: #f08080;
+      }
+      .card .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 10px solid #f08080;
+        margin: -10px 0 0 -10px;
+        backface-visibility: visible;
+        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+        transform-style: preserve-3d;
+        transform-origin: 0% 50%;
+        transform: perspective(800px) rotateY(0deg);
+        transition: all 0.8s ease-in-out;
+        background-color: #f08080;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+      }
+      .imgset {
+        position: relative;
+        z-index: 1;
+        margin-bottom: -215px;
+      }
+      .imgset img {
+        box-shadow: 0 6px 11px 7px rgba(0, 0, 0, 0.22);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <audio autoplay id="Ipl" loop>
+    <source src="https://dl.dropbox.com/scl/fi/ypp3p4m33vdt771mqbg2o/Jalan-Kenangan-Willem-Nijholt-Wieteke-van-Dort-lengkap-dengan-lirik-Foto-foto-Jakarta-1937.mp3?rlkey=dvked6lbr90642hfj71tl690q&st=2ihdquj5&dl=0">
+    </audio>
+    <div class="card">
+      <div class="back">
+        <a href="https://ibb.co.com/mT0Tgqw"><img src="https://i.ibb.co.com/Gp9pN2L/IMG-20240621-213331.jpg" alt="IMG-20240621-213331" border="0" width="300" height="425"></a>
+      </div>
+      <div class="front">
+        <div class="imgset">
+          <img
+            width="100%"
+            src="https://i.ibb.co.com/g3fbtc3/Pink-and-White-Illustrative-Happy-Birthday-Card-20240622-054053-0000.png"
+            alt="Birthday Image"
+          />
+        </div>
+      </div>
+      <div class="text-container">
+        <p class="head">Happy Birthday Cha!</p>
+        <p>
+          Met ultah hai my dear investor,
+          Ciee yg 2 abad, mulai sekarang bakal ku panggil tante gk mw taw.
+        </p>
+        <p>Moga makin panjang umur biar tiap hari gweijh bisa pamer ke eloh 😇</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="back">
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/3smP9Lz/IMG-20240621-213446.jpg" alt="IMG-20240621-213446" border="0" width="300" height="425"></a>
+      </div>
+      <div class="front">
+        <div class="imgset">
+          <img
+            width="100%"
+            src="https://i.ibb.co.com/g3fbtc3/Pink-and-White-Illustrative-Happy-Birthday-Card-20240622-054053-0000.png"
+            alt="Birthday Image"
+          />
+        </div>
+      </div>
+      <div class="text-container">
+        <p class="head">Happy Birthday Cha!</p>
+        <p>
+          Keknya enak tuh di SW mu traktiran makan steak,
+          aku kan jg mw 👉👈
+        </p>
+        <p>Semoga makin banyak rezeki biar bisa traktir gweijh 😇</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="back">
+        <a href="https://ibb.co.com/fNwbMbk"><img src="https://i.ibb.co.com/GMSX7XW/IMG-20240621-213351.jpg" alt="IMG-20240621-213351" border="0" width="300" height="425"></a>
+      </div>
+      <div class="front">
+        <div class="imgset">
+          <img
+            width="100%"
+            src="https://i.ibb.co.com/g3fbtc3/Pink-and-White-Illustrative-Happy-Birthday-Card-20240622-054053-0000.png"
+            alt="Birthday Image"
+          />
+        </div>
+      </div>
+      <div class="text-container">
+        <p class="head">Happy Birthday Cha!</p>
+        <p>
+          Udh 3 taun kita kenal dan koe gak brubah samsek, masih gampang betmut 😔.
+          jangan stress terus kack ntar keriput.
+        </p>
+        <p>Semoga sifat koe yg baik ke sesama walau baru ketemu gk ilang 😇</p>
+      </div>
+    </div>
+  </body>
+</html>
